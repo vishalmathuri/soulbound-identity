@@ -17,7 +17,9 @@ contract SoulboundIdentity is ERC721, Ownable {
     mapping(uint256 => SBTData) private _sbtDetails;
     mapping(address => bool) public hasSBT;
 
-    constructor() ERC721("SoulboundIdentity", "SBT") Ownable(msg.sender) {}
+    //constructor() ERC721("SoulboundIdentity", "SBT") Ownable(msg.sender) {}
+    constructor(address initialOwner) ERC721("SoulboundIdentity", "SBT") Ownable(initialOwner) {}
+
 
     function mintSBT(
         address to,
