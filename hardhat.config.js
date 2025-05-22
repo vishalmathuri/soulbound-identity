@@ -1,3 +1,4 @@
+// // Local Network
 // require("@nomicfoundation/hardhat-toolbox");
 
 // module.exports = {
@@ -9,6 +10,8 @@
 //   },
 // };
 
+
+// Sepolia Testnet 
 require("@nomicfoundation/hardhat-toolbox");
 require("dotenv").config(); // To load PRIVATE_KEY and INFURA/ALCHEMY_API_KEY from .env
 
